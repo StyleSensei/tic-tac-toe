@@ -24,9 +24,9 @@ defineProps<PlayerProps>();
 <style scoped>
  #players{
   display: flex;
-  width: 80vw;
   justify-content: space-around;
-  padding: 10rem;
+  padding: 10vw;
+  gap:2rem;
   position: absolute;
   bottom: 2rem;
 }

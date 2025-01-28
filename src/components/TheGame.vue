@@ -159,6 +159,7 @@ const updateBoard = (rowIndex: number, cellIndex: number, value: string) => {
       @on-submit="(input:string) => handleSubmit(input)"
     ></Form>
     <Button
+      v-if="state.players.length >= 2"
       id="start-game"
       text="Start game"
       title="start game"
@@ -189,8 +190,10 @@ const updateBoard = (rowIndex: number, cellIndex: number, value: string) => {
 section {
   display: flex;
   width: 100%;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 button {
   padding: 1rem 4rem;

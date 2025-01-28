@@ -182,9 +182,13 @@ const checkIfDraw = () => {
 </template>
 
 <style scoped lang="scss">
+table{
+  padding: 1rem 0;
+}
+
 ul {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   li {
     list-style: none;
   }
@@ -194,8 +198,8 @@ tr {
   display: flex;
   /* gap: 10px; */
   justify-content: space-around;
-  margin-bottom: 2rem;
-  gap: 2rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 td {
