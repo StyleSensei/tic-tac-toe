@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Player } from '../models/Player';
+import type { Player } from "../models/Player";
 
 interface PlayerProps {
-  players: Player[];
+	players: Player[];
 }
 defineProps<PlayerProps>();
 </script>
@@ -29,5 +29,6 @@ defineProps<PlayerProps>();
   gap:2rem;
   position: absolute;
   bottom: 2rem;
+  pointer-events: none;
 }
 </style>
